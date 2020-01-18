@@ -1,0 +1,12 @@
+import React from 'react';
+import classes from './{{pascalCase name}}.module.css';
+
+interface Props {}
+
+function {{pascalCase name}}(props: Props) {
+  return <p className={classes.root}>{{pascalCase name}} works!</p>;
+}
+
+{{pascalCase name}}.defaultProps = {};
+
+export default {{pascalCase name}};

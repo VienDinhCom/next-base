@@ -1,0 +1,4 @@
+export const {{camelCase name}}Service = {
+  get: () => {},
+  set: () => {}
+};
