@@ -1,4 +1,4 @@
-const { upperFirst, camelCase, lowerCase } = require('lodash');
+const { upperFirst, camelCase, kebabCase } = require('lodash');
 
 const pageGenerator = require('./frontend/page/generator');
 const componentGenerator = require('./frontend/component/generator');
@@ -20,10 +20,10 @@ module.exports = function(plop) {
       .join('/');
   });
 
-  plop.setHelper('lowerCase', function(text) {
+  plop.setHelper('kebabCase', function(text) {
     return text
       .split('/')
-      .map(text => lowerCase(text))
+      .map(text => kebabCase(text))
       .join('/');
   });
 

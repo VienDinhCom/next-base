@@ -16,7 +16,7 @@ module.exports = plop =>
     actions: [
       {
         type: 'add',
-        path: 'src/pages/{{#if parent}}/{{lowerCase parent}}{{/if}}/{{lowerCase name}}.tsx',
+        path: 'src/pages/{{#if parent}}/{{kebabCase parent}}{{/if}}/{{kebabCase name}}.tsx',
         templateFile: 'frontend/page/page.tsx.txt'
       }
     ]
