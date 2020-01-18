@@ -13,6 +13,13 @@ module.exports = function(plop) {
       .join('/');
   });
 
+  plop.setHelper('camelCase', function(text) {
+    return text
+      .split('/')
+      .map(text => camelCase(text))
+      .join('/');
+  });
+
   plop.setHelper('lowerCase', function(text) {
     return text
       .split('/')
