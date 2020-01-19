@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface Props {}
 
@@ -7,7 +7,7 @@ function Page(props: Props) {
 }
 
 Page.getInitialProps = async () => {
-  return { hello: 'world' };
+  return {};
 };
 
 export default Page;
